@@ -1,4 +1,3 @@
-from multiprocessing.resource_sharer import stop
 import numpy as np
 import math
 from scipy.integrate import odeint

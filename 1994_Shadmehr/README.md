@@ -109,11 +109,20 @@ This will:
 
 During execution, several plots will appear:
 
-- Desired vs. simulated **hand trajectory**
-- Minimum-jerk **velocity and acceleration profiles**
-- Desired **joint angles and velocities**
-- End-effector **path before, during, and after adaptation**
+![Two-link arm posture](img/arm_posture.png)
+*Figure — Typical arm posture during a reaching movement.*
 
+![Minimum-jerk profiles](img/minimal_jerk.png)
+*Figure — Minimum-jerk position, velocity, and acceleration profiles used to generate desired trajectories.*
+
+![Null Force field](img/shadmehr_nullff.png)
+*Figure — Null Force Field Trajectory.*
+
+![Early Exposure](img/shadmehr_early_exposure.png)
+*Figure — Early exposure to the force field.*
+
+![After Effect](img/shadmehr_posteffect.png)
+*Figure — Post Effect Trajectory (in a null force field).*
 ---
 
 ## 🧠 Learning Interpretation
