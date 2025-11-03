@@ -18,7 +18,7 @@ import os
 import numpy as np
 from scipy.signal import savgol_filter
 from numpy.linalg import pinv
-from FourDofArm import *
+from temp.FourDofArm import *
 
 
 # ---------- finite-horizon LQR solver for time-varying discrete linear system ----------
