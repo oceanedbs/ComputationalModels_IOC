@@ -37,7 +37,7 @@ The workflow includes:
 You will need the following Python packages:
 
 ```bash
-pip install numpy matplotlib casadi
+pip install numpy matplotlib casadi scipy
 ```
 
 ---
@@ -110,14 +110,26 @@ Displays the evolution of:
 
 These are plotted over time using `plot_joint_traj_from_vars()`.
 
+![Joint trajectories over time](img/joint_traj.png)
+
+Figure: Joint positions (q), velocities (dq), accelerations (ddq), and torques (τ) plotted over the trajectory.
+
 ### 🤖 2. Robot Snapshots
 The function `plot_snapshots_from_vars()` visualizes snapshots of the robot’s configuration throughout the motion, showing:
 - Link positions
 - Center of mass (COM) trajectories
 - End-effector path
 
+![Robot Snapshot](img/arm_snapshot.png)
+
+Figure: 2 DoF robot arm snapshot.
+
 ### ⚙️ 3. Segment Velocities
 `plot_segment_vels_from_vars()` compares analytically computed and numerically estimated segment velocities along the motion.
+
+![Segment Velocities](img/seg_vel.png)
+
+Figure: Segment velocities.
 
 ### 📈 4. Inverse Optimal Control Results
 After optimization, the identified cost weights (`theta_id`) are compared with the true weights (`theta_true`):
@@ -129,3 +141,13 @@ Id. theta = [0.0003, 0.9985, 0.0002, ...]
 
 
 These results verify that the IOC procedure correctly identifies the underlying cost structure used to generate the motion.
+
+
+### Use it with pixi
+
+To make it easier you can directly import the pixi workspace that will set everything up for you. 
+In this folder, you can just run 
+```bash
+pixi install
+``` 
+This will install all the necessary libraries contained in the pyproject.toml file
