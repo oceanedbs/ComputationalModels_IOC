@@ -2,3 +2,4 @@ Data/*
 temp/*
 
 *.pyc
+__pycache__/
