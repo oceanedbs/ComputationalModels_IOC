@@ -160,7 +160,7 @@ packages:
 - pypi: ./
   name: 2024-becanovic
   version: 0.1.0
-  sha256: 953c32779f98fbe2c8a76224462b1830d6798d6bbcb3646b35bd96ba0e9dd5a5
+  sha256: 645c9d4d9c85ebf90746f316993c0e0a43d73def0a1665120f584d6dcac2d0a0
   requires_python: '>=3.11'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-5_kmp_llvm.conda
